@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="576.0" prefWidth="407.0" style="-fx-background-color: #9b9f9f;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateCustomerFormController">
+   <children>
+      <ComboBox fx:id="cmbTitle" layoutX="61.0" layoutY="282.0" prefHeight="26.0" prefWidth="72.0" promptText="Title" style="-fx-background-color: LIGHTBLUE;" />
+      <DatePicker fx:id="dateDob" layoutX="181.0" layoutY="439.0" prefHeight="26.0" prefWidth="150.0" promptText="Date" />
+      <JFXButton layoutX="184.0" layoutY="504.0" onAction="#btnUpdateCustomerOnAction" prefHeight="46.0" prefWidth="111.0" style="-fx-background-color: green;" text="UPDATE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></JFXButton>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="92.0" stroke="BLACK" strokeType="INSIDE" width="407.0" />
+      <Label layoutX="27.0" layoutY="21.0" text="UPDATE CUSTOMER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId" layoutX="181.0" layoutY="226.0" promptText="ID" />
+      <TextField fx:id="txtAddress" layoutX="181.0" layoutY="334.0" promptText="ADDRESS" />
+      <TextField fx:id="txtName" layoutX="181.0" layoutY="282.0" promptText="NAME" />
+      <TextField fx:id="txtSearch" layoutX="54.0" layoutY="145.0" prefHeight="26.0" prefWidth="202.0" promptText="SEARCH" />
+      <JFXButton layoutX="287.0" layoutY="140.0" onAction="#btnSearch" prefHeight="36.0" prefWidth="84.0" style="-fx-background-color: green;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></JFXButton>
+      <TextField fx:id="txtNumber" layoutX="181.0" layoutY="388.0" promptText="CONTACT NUMBER" />
+   </children>
+</AnchorPane>
